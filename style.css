@@ -16,6 +16,10 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
 /*ESTILO CABEÇALHO*/
 
 header{
@@ -49,7 +53,7 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .david-contato button{
+.david-contato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -57,13 +61,62 @@ header .david-contato button{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: 1.2s;
 }
 
-header .david-contato button:hover{
+.david-contato button:hover{
     box-shadow: 0px 0px 8px #c1973c98;
+    transform: scale(1.05);
 }
 
 img{
     width: 100px;
     height: 100px;
 }
+
+/*TOPO DO SITE*/
+
+.img-polig{
+    width: 400px;
+    height: 400px;
+}
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #C1963C;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
